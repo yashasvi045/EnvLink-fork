@@ -31,11 +31,12 @@ import tempoRoutes from './routes/tempo.js';
 import merraRoutes from './routes/merra.js';
 import gibsRoutes from './routes/gibs.js';
 import forecastRoutes from './routes/forecast.js';
+import dailyTipRouter from './routes/dailyTip.js';
 
+app.use('/api/dailyTip', dailyTipRouter);
 app.use('/api/aqi', forecastRoutes);
 app.use('/api/aqi', aqiRoutes);
 app.use('/api/weather', weatherRoutes);
-app.use('/api/daily-tip', dailyTipRoutes);
 app.use('/api/trips', tripsRoutes);
 app.use('/api/chatbot', chatRoutes);
 app.use('/api/environmental', envRoutes);
