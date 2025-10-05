@@ -23,19 +23,25 @@ import aqiRoutes from './routes/aqi.js';
 import weatherRoutes from './routes/weather.js';
 import dailyTipRoutes from './routes/dailyTip.js';
 import tripsRoutes from './routes/trips.js';
-import tempoRoutes from './routes/tempo.js';
 import chatRoutes from './routes/chatbot.js';
 import envRoutes from './routes/environmental.js';
 import userRoutes from './routes/user.js';
+import nasaRoutes from './routes/nasa.js';
+import tempoRoutes from './routes/tempo.js';
+import merraRoutes from './routes/merra.js';
+import gibsRoutes from './routes/gibs.js';
 
 app.use('/api/aqi', aqiRoutes);
 app.use('/api/weather', weatherRoutes);
 app.use('/api/daily-tip', dailyTipRoutes);
 app.use('/api/trips', tripsRoutes);
-app.use('/api/tempo', tempoRoutes);
 app.use('/api/chatbot', chatRoutes);
 app.use('/api/environmental', envRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/nasa', nasaRoutes);    // aggregated POWER + TEMPO + MERRA
+app.use('/api/tempo', tempoRoutes);  // direct access to TEMPO service
+app.use('/api/merra', merraRoutes);  // direct access to MERRA service
+app.use('/api/nasa/gibs', gibsRoutes); // imagery
 
 app.get('/ping', (req, res) => res.send('pong'));
 app.get('/', (req, res) => res.json({ success: true, message: 'EnvLink Backend running' }));
