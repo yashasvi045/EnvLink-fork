@@ -2,7 +2,7 @@ import express from 'express';
 import { getDirections, mockRoute } from '../services/tripService.js';
 const router = express.Router();
 
-router.post('/plan', async (req, res) => {
+router.post('/trips', async (req, res) => {
   try {
     const { origin, destination } = req.body;
     const data = await getDirections(origin, destination);
