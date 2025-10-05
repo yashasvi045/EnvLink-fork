@@ -39,7 +39,7 @@ if ("serviceWorker" in navigator && process.env.NODE_ENV === "production") {
 
 // Performance monitoring
 if (process.env.NODE_ENV === "development") {
-  console.log("🚀 AirGuard - Development Mode");
+  console.log("🚀 EnvLink - Development Mode");
 }
 
 // Error boundary for uncaught errors
