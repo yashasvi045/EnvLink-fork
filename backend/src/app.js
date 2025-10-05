@@ -30,7 +30,9 @@ import nasaRoutes from './routes/nasa.js';
 import tempoRoutes from './routes/tempo.js';
 import merraRoutes from './routes/merra.js';
 import gibsRoutes from './routes/gibs.js';
+import forecastRoutes from './routes/forecast.js';
 
+app.use('/api/aqi', forecastRoutes);
 app.use('/api/aqi', aqiRoutes);
 app.use('/api/weather', weatherRoutes);
 app.use('/api/daily-tip', dailyTipRoutes);
