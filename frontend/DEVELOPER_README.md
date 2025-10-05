@@ -1,8 +1,8 @@
-# AirGuard Frontend - Developer Documentation
+# EnvLink Frontend - Developer Documentation
 
 ## 🚀 Project Overview
 
-AirGuard is a real-time AQI (Air Quality Index) monitoring and environmental awareness platform built for the NASA Space Apps Challenge. This frontend application provides users with comprehensive air quality data, trip planning with environmental considerations, and educational content about environmental health.
+EnvLink is a real-time AQI (Air Quality Index) monitoring and environmental awareness platform built for the NASA Space Apps Challenge. This frontend application provides users with comprehensive air quality data, trip planning with environmental considerations, and educational content about environmental health.
 
 ## 📋 Features
 
