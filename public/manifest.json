@@ -1,0 +1,125 @@
+{
+  "name": "AirGuard",
+  "short_name": "AirGuard",
+  "description": "Real-time AQI Forecast, Trip Planning, Daily Advice & Earth Insights",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10B981",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["weather", "health", "environment", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+  "label": "AirGuard Dashboard"
+    },
+    {
+      "src": "/screenshots/mobile-dashboard.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+  "label": "AirGuard Mobile Dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Check AQI",
+      "short_name": "AQI",
+      "description": "Check current air quality",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icons/shortcut-aqi.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Plan Trip",
+      "short_name": "Trip",
+      "description": "Plan an eco-friendly route",
+      "url": "/trip",
+      "icons": [
+        {
+          "src": "/icons/shortcut-trip.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Earth Today",
+      "short_name": "Earth",
+      "description": "View global environmental data",
+      "url": "/earth",
+      "icons": [
+        {
+          "src": "/icons/shortcut-earth.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
