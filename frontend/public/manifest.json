@@ -1,6 +1,6 @@
 {
-  "name": "AirGuard",
-  "short_name": "AirGuard",
+  "name": "EnvLink",
+  "short_name": "EnvLink",
   "description": "Real-time AQI Forecast, Trip Planning, Daily Advice & Earth Insights",
   "start_url": "/",
   "display": "standalone",
