@@ -1,4 +1,4 @@
-# Backend Integration Guide for AirGuard Frontend
+# Backend Integration Guide for EnvLink Frontend
 
 ## ✅ Frontend Status: **READY FOR BACKEND INTEGRATION**
 
