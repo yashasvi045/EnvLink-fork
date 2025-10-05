@@ -2,7 +2,7 @@
 import express from 'express';
 import { getTempoData } from '../services/tempoService.js';
 
-const router = express.Router();
+const router = express.Router(); 
 
 router.post('/nasa/tempo', async (req, res) => {
   const { latitude, longitude, start, end } = req.body || {};
