@@ -38,7 +38,8 @@ app.use('/api/weather', weatherRoutes);
 app.use('/api/trips', tripsRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/global', envRoutes);
-app.use('/api/user', userRoutes);
+app.use('/api/user/profile', userRoutes);
+app.use('/api/user/stat', userRoutes);
 app.use('/api/nasa/tempo', tempoRoutes);  // direct access to TEMPO service
 app.use('/api/nasa/gibs', gibsRoutes); // imagery
 
