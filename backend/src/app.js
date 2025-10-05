@@ -28,7 +28,6 @@ import envRoutes from './routes/environmental.js';
 import userRoutes from './routes/user.js';
 import nasaRoutes from './routes/nasa.js';
 import tempoRoutes from './routes/tempo.js';
-import merraRoutes from './routes/merra.js';
 import gibsRoutes from './routes/gibs.js';
 import forecastRoutes from './routes/forecast.js';
 import dailyTipRouter from './routes/dailyTip.js';
@@ -43,7 +42,6 @@ app.use('/api/environmental', envRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/nasa', nasaRoutes);    // aggregated POWER + TEMPO + MERRA
 app.use('/api/tempo', tempoRoutes);  // direct access to TEMPO service
-app.use('/api/merra', merraRoutes);  // direct access to MERRA service
 app.use('/api/nasa/gibs', gibsRoutes); // imagery
 
 app.get('/ping', (req, res) => res.send('pong'));
