@@ -63,7 +63,7 @@ src/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd airguard-frontend
+   cd envlink-frontend
    ```
 
 2. **Install dependencies**
