@@ -112,14 +112,14 @@ class APIService {
 
   // Weather Data Methods
   async getCurrentWeather(latitude: number, longitude: number): Promise<APIResponse<any>> {
-    return this.request<any>('/weather/current', {
+    return this.request<any>('/weather', {
       method: 'POST',
       body: JSON.stringify({ latitude, longitude }),
     });
   }
 
   async getWeatherForecast(latitude: number, longitude: number, days: number = 7): Promise<APIResponse<any>> {
-    return this.request<any>('/weather/forecast', {
+    return this.request<any>('/weather', {
       method: 'POST',
       body: JSON.stringify({ latitude, longitude, days }),
     });
@@ -127,62 +127,62 @@ class APIService {
 
   // Trip Planning Methods
   async planTrip(request: TripPlanRequest): Promise<APIResponse<TripPlanResponse>> {
-    return this.request<TripPlanResponse>('/trips/plan', {
+    return this.request<TripPlanResponse>('/trips', {
       method: 'POST',
       body: JSON.stringify(request),
     });
   }
 
   async optimizeTrip(tripId: string, preferences: any): Promise<APIResponse<TripPlanResponse>> {
-    return this.request<TripPlanResponse>('/trips/optimize', {
+    return this.request<TripPlanResponse>('/trips', {
       method: 'POST',
       body: JSON.stringify({ tripId, preferences }),
     });
   }
 
   async getTripHistory(): Promise<APIResponse<TripPlanResponse[]>> {
-    return this.request<TripPlanResponse[]>('/trips/history', {
+    return this.request<TripPlanResponse[]>('/trips', {
       method: 'GET',
     });
   }
 
   // NASA TEMPO Data Methods
   async getTEMPOData(request: TEMPODataRequest): Promise<APIResponse<TEMPODataResponse>> {
-    return this.request<TEMPODataResponse>('/tempo/current', {
+    return this.request<TEMPODataResponse>('/nasa/tempo', {
       method: 'POST',
       body: JSON.stringify(request),
     });
   }
 
   async getTEMPOHistorical(request: TEMPODataRequest): Promise<APIResponse<TEMPODataResponse>> {
-    return this.request<TEMPODataResponse>('/tempo/historical', {
+    return this.request<TEMPODataResponse>('/nasa/tempo', {
       method: 'POST',
       body: JSON.stringify(request),
     });
   }
 
   async getTEMPOCoverage(): Promise<APIResponse<any>> {
-    return this.request<any>('/tempo/coverage', {
+    return this.request<any>('/nasa/tempo', {
       method: 'GET',
     });
   }
 
   // Environmental Data Methods
   async getGlobalEnvironmentalData(): Promise<APIResponse<EnvironmentalDataResponse>> {
-    return this.request<EnvironmentalDataResponse>('/environmental/global', {
+    return this.request<EnvironmentalDataResponse>('/global', {
       method: 'GET',
     });
   }
 
   async getRegionalEnvironmentalData(region: string): Promise<APIResponse<EnvironmentalDataResponse>> {
-    return this.request<EnvironmentalDataResponse>('/environmental/regional', {
+    return this.request<EnvironmentalDataResponse>('/global', {
       method: 'POST',
       body: JSON.stringify({ region }),
     });
   }
 
   async getEnvironmentalTrends(days: number = 30): Promise<APIResponse<any>> {
-    return this.request<any>('/environmental/trends', {
+    return this.request<any>('/global', {
       method: 'POST',
       body: JSON.stringify({ days }),
     });
@@ -236,14 +236,14 @@ class APIService {
 
   // Chatbot Methods
   async sendChatMessage(message: string, context?: any): Promise<APIResponse<any>> {
-    return this.request<any>('/chatbot/chat', {
+    return this.request<any>('/chat', {
       method: 'POST',
       body: JSON.stringify({ message, context }),
     });
   }
 
   async getChatSuggestions(): Promise<APIResponse<string[]>> {
-    return this.request<string[]>('/chatbot/suggestions', {
+    return this.request<string[]>('/suggestions', {
       method: 'GET',
     });
   }
