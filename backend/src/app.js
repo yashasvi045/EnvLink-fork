@@ -33,15 +33,14 @@ import forecastRoutes from './routes/forecast.js';
 import dailyTipRouter from './routes/dailyTip.js';
 
 app.use('/api/dailyTip', dailyTipRouter);
-app.use('/api/aqi', forecastRoutes);
-app.use('/api/aqi', aqiRoutes);
+app.use('/api/aqi/forecast', forecastRoutes);
+app.use('/api/aqi/current', aqiRoutes);
 app.use('/api/weather', weatherRoutes);
 app.use('/api/trips', tripsRoutes);
-app.use('/api/chatbot', chatRoutes);
-app.use('/api/environmental', envRoutes);
+app.use('/api/chat', chatRoutes);
+app.use('/api/global', envRoutes);
 app.use('/api/user', userRoutes);
-app.use('/api/nasa', nasaRoutes);    // aggregated POWER + TEMPO + MERRA
-app.use('/api/tempo', tempoRoutes);  // direct access to TEMPO service
+app.use('/api/nasa/tempo', tempoRoutes);  // direct access to TEMPO service
 app.use('/api/nasa/gibs', gibsRoutes); // imagery
 
 app.get('/ping', (req, res) => res.send('pong'));
