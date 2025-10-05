@@ -4,7 +4,7 @@ import { getTempoData } from '../services/tempoService.js';
 
 const router = express.Router();
 
-router.post('/aqi/tempo', async (req, res) => {
+router.post('/nasa/tempo', async (req, res) => {
   const { latitude, longitude, start, end } = req.body || {};
   if (!latitude || !longitude) return res.status(400).json({ success: false, error: 'latitude and longitude required' });
   const today = new Date();
