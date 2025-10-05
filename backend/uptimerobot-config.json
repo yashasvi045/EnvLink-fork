@@ -1,0 +1,8 @@
+[
+  {
+    "friendly_name": "EnvLink Backend (Render)",
+    "url": "https://envlink-backend.onrender.com/ping",
+    "type": 1,
+    "interval": 300
+  }
+]
