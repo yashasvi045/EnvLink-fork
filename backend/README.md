@@ -15,7 +15,7 @@ Endpoints (all JSON):
 - POST /api/weather/current     { latitude, longitude }
 - POST /api/daily-tip/today     { language }
 - POST /api/trips/plan          { origin: { latitude, longitude, address }, destination: { latitude, longitude, address } }
-- POST /api/chatbot/chat        { message }
+- POST /api/chat                { message }
 - POST /api/environmental/data  { latitude, longitude, date }
 - POST /api/user/login          { email, password }
 - POST /api/user/register       { name, email, password }
