@@ -21,7 +21,6 @@ app.use(cors({ origin: function(origin, callback) {
 
 import aqiRoutes from './routes/aqi.js';
 import weatherRoutes from './routes/weather.js';
-import dailyTipRoutes from './routes/dailyTip.js';
 import tripsRoutes from './routes/trips.js';
 import chatRoutes from './routes/chatbot.js';
 import envRoutes from './routes/environmental.js';
